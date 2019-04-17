@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ShopChomChonDataSet5" targetNamespace="http://tempuri.org/ShopChomChonDataSet5.xsd" xmlns:mstns="http://tempuri.org/ShopChomChonDataSet5.xsd" xmlns="http://tempuri.org/ShopChomChonDataSet5.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ShopChomChonConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ShopChomChonConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ShopChomChon.Properties.Settings.GlobalReference.Default.ShopChomChonConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="สรุปยอดปันผลTableAdapter" GeneratorDataComponentClassName="สรุปยอดปันผลTableAdapter" Name="สรุปยอดปันผล" UserDataComponentName="สรุปยอดปันผลTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ShopChomChonConnectionString (Settings)" DbObjectName="ShopChomChon.dbo.สรุปยอดปันผล" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT เลขสมาชิก, ชื่อ, นามสกุล, จำนวนหุ้น, ปันผลหุ่นละ, ปันผลหุ้น, รวมยอดซื้อ, ปันผลยอดซื้อ, ปันผล_อบต, รวมได้รับทั้งสิ้น, สถานะการรับเงิน, หมายเหตุ FROM dbo.สรุปยอดปันผล</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="เลขสมาชิก" DataSetColumn="เลขสมาชิก" />
+              <Mapping SourceColumn="ชื่อ" DataSetColumn="ชื่อ" />
+              <Mapping SourceColumn="นามสกุล" DataSetColumn="นามสกุล" />
+              <Mapping SourceColumn="จำนวนหุ้น" DataSetColumn="จำนวนหุ้น" />
+              <Mapping SourceColumn="ปันผลหุ่นละ" DataSetColumn="ปันผลหุ่นละ" />
+              <Mapping SourceColumn="ปันผลหุ้น" DataSetColumn="ปันผลหุ้น" />
+              <Mapping SourceColumn="รวมยอดซื้อ" DataSetColumn="รวมยอดซื้อ" />
+              <Mapping SourceColumn="ปันผลยอดซื้อ" DataSetColumn="ปันผลยอดซื้อ" />
+              <Mapping SourceColumn="ปันผล_อบต" DataSetColumn="ปันผล_อบต" />
+              <Mapping SourceColumn="รวมได้รับทั้งสิ้น" DataSetColumn="รวมได้รับทั้งสิ้น" />
+              <Mapping SourceColumn="สถานะการรับเงิน" DataSetColumn="สถานะการรับเงิน" />
+              <Mapping SourceColumn="หมายเหตุ" DataSetColumn="หมายเหตุ" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ShopChomChonDataSet5" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ShopChomChonDataSet5" msprop:Generator_UserDSName="ShopChomChonDataSet5">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="สรุปยอดปันผล" msprop:Generator_TableClassName="สรุปยอดปันผลDataTable" msprop:Generator_TableVarName="tableสรุปยอดปันผล" msprop:Generator_TablePropName="สรุปยอดปันผล" msprop:Generator_RowDeletingName="สรุปยอดปันผลRowDeleting" msprop:Generator_RowChangingName="สรุปยอดปันผลRowChanging" msprop:Generator_RowEvHandlerName="สรุปยอดปันผลRowChangeEventHandler" msprop:Generator_RowDeletedName="สรุปยอดปันผลRowDeleted" msprop:Generator_UserTableName="สรุปยอดปันผล" msprop:Generator_RowChangedName="สรุปยอดปันผลRowChanged" msprop:Generator_RowEvArgName="สรุปยอดปันผลRowChangeEvent" msprop:Generator_RowClassName="สรุปยอดปันผลRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="เลขสมาชิก" msprop:Generator_ColumnVarNameInTable="columnเลขสมาชิก" msprop:Generator_ColumnPropNameInRow="เลขสมาชิก" msprop:Generator_ColumnPropNameInTable="เลขสมาชิกColumn" msprop:Generator_UserColumnName="เลขสมาชิก" type="xs:int" />
+              <xs:element name="ชื่อ" msprop:Generator_ColumnVarNameInTable="columnชื่อ" msprop:Generator_ColumnPropNameInRow="ชื่อ" msprop:Generator_ColumnPropNameInTable="ชื่อColumn" msprop:Generator_UserColumnName="ชื่อ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="นามสกุล" msprop:Generator_ColumnVarNameInTable="columnนามสกุล" msprop:Generator_ColumnPropNameInRow="นามสกุล" msprop:Generator_ColumnPropNameInTable="นามสกุลColumn" msprop:Generator_UserColumnName="นามสกุล" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="จำนวนหุ้น" msprop:Generator_ColumnVarNameInTable="columnจำนวนหุ้น" msprop:Generator_ColumnPropNameInRow="จำนวนหุ้น" msprop:Generator_ColumnPropNameInTable="จำนวนหุ้นColumn" msprop:Generator_UserColumnName="จำนวนหุ้น" type="xs:int" minOccurs="0" />
+              <xs:element name="ปันผลหุ่นละ" msprop:Generator_ColumnVarNameInTable="columnปันผลหุ่นละ" msprop:Generator_ColumnPropNameInRow="ปันผลหุ่นละ" msprop:Generator_ColumnPropNameInTable="ปันผลหุ่นละColumn" msprop:Generator_UserColumnName="ปันผลหุ่นละ" type="xs:int" minOccurs="0" />
+              <xs:element name="ปันผลหุ้น" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnปันผลหุ้น" msprop:Generator_ColumnPropNameInRow="ปันผลหุ้น" msprop:Generator_ColumnPropNameInTable="ปันผลหุ้นColumn" msprop:Generator_UserColumnName="ปันผลหุ้น" type="xs:int" minOccurs="0" />
+              <xs:element name="รวมยอดซื้อ" msprop:Generator_ColumnVarNameInTable="columnรวมยอดซื้อ" msprop:Generator_ColumnPropNameInRow="รวมยอดซื้อ" msprop:Generator_ColumnPropNameInTable="รวมยอดซื้อColumn" msprop:Generator_UserColumnName="รวมยอดซื้อ" type="xs:int" minOccurs="0" />
+              <xs:element name="ปันผลยอดซื้อ" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnปันผลยอดซื้อ" msprop:Generator_ColumnPropNameInRow="ปันผลยอดซื้อ" msprop:Generator_ColumnPropNameInTable="ปันผลยอดซื้อColumn" msprop:Generator_UserColumnName="ปันผลยอดซื้อ" type="xs:int" minOccurs="0" />
+              <xs:element name="ปันผล_อบต" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnปันผล_อบต" msprop:Generator_ColumnPropNameInRow="ปันผล_อบต" msprop:Generator_ColumnPropNameInTable="ปันผล_อบตColumn" msprop:Generator_UserColumnName="ปันผล_อบต" type="xs:int" minOccurs="0" />
+              <xs:element name="รวมได้รับทั้งสิ้น" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnรวมได้รับทั้งสิ้น" msprop:Generator_ColumnPropNameInRow="รวมได้รับทั้งสิ้น" msprop:Generator_ColumnPropNameInTable="รวมได้รับทั้งสิ้นColumn" msprop:Generator_UserColumnName="รวมได้รับทั้งสิ้น" type="xs:int" minOccurs="0" />
+              <xs:element name="สถานะการรับเงิน" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnสถานะการรับเงิน" msprop:Generator_ColumnPropNameInRow="สถานะการรับเงิน" msprop:Generator_ColumnPropNameInTable="สถานะการรับเงินColumn" msprop:Generator_UserColumnName="สถานะการรับเงิน" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="หมายเหตุ" msprop:Generator_ColumnVarNameInTable="columnหมายเหตุ" msprop:Generator_ColumnPropNameInRow="หมายเหตุ" msprop:Generator_ColumnPropNameInTable="หมายเหตุColumn" msprop:Generator_UserColumnName="หมายเหตุ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:สรุปยอดปันผล" />
+      <xs:field xpath="mstns:เลขสมาชิก" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
